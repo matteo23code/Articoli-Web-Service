@@ -29,6 +29,13 @@ namespace ArticoliWebService
 
             app.UseRouting();
 
+            app.UseCors(options => 
+                options
+                .WithOrigins("http://localhost:4200")
+                .WithMethods("POST, PUT, DELETE, GET")
+                .AllowAnyHeader()
+            );
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
