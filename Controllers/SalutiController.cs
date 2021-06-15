@@ -2,7 +2,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ArticoliWebService.Controller
+namespace ArticoliWebService.Controllers
 {
     [ApiController] //le notazioni all' interno dell .net core vengono identificate dentro alle parentesi quadre;
     [Route("api/saluti")]
